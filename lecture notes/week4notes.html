@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Week 4 Notes</title>
+        <meta charset="utf-8">
+        <style>
+            th, td{border: 1px solid black;} 
+        </style>
+    </head>
+    <body>
+        <h1>Tables and Forms day</h1>
+            <h2>tables</h2>
+                <table>
+                    <caption>World Populations</caption>
+                    <tr> <!--tr stands for table row-->
+                        <th>country</th> <!--th stands for table header-->
+                        <th>population</th>
+                        <th>% of population</th>
+                    </tr>
+                    <tr>
+                        <td>China</td> <!--td stands for table data-->
+                        <td>1,403,830,640</td>
+                        <td>18%</td>
+                    </tr>
+                    <tr>
+                        <td>India</td>
+                        <td>1,365,529,124</td>
+                        <td>17.5%</td>
+                    <tr>
+                        <td>United States</td>
+                        <td>330,370,331</td>
+                        <td>4.23%</td>
+                    </tr>
+                    </tr>
+                </table>
+            <h2>Forms</h2>
+                <form action="" method="post"> <!-- post sends form data on the back end -->
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br> <!--for value must match ID value to link label and input element-->
+                    <label for="instructions">special instructions:</label><br>
+                    <textarea id="instructions" name="instructions" rows="3" cols="60"></textarea><br>
+                    <p>Choose a delivery method:</p>
+                    <input type="radio" id="pickup" name="pickupdelivery" value="pickup"> <!-- (radio) the value in name hooks radio buttons together-->
+                    <label for="pickup">pickup</label>
+                    <input type="radio" id="delivery" name="pickupdelivery" value="delivery">
+                    <label for="delivery">delivery</label>
+                    <p>Do you want extra sauce</p>
+                    <input type="checkbox" id="extra" name="extra" value="yes">
+                    <label for="extra">Yes</label><br>
+                    <label for="neighborhood">Neighborhood</label><br>
+                    <select id="neighborhood" name="neighborhood">
+                        <option></option>
+                        <option value="Westcott">Westcott</option>
+                        <option value="Downtown">Downtown</option>
+                        <option value="Eastwood">Eastwood</option>
+                    </select><br>
+                    <!-- most form elements are inline which menas no forwarding to the next line and no margin around 
+                    inline means no space between the word and the action: example is fullname and special instructions-->
+                    <input type="Submit" value="Send Form">
+                </form>
+    </body>
+</html>
