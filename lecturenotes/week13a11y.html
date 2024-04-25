@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a11y</title>
+    <style>
+        .skip {
+            background-color: #add8e6;padding: 8px; border: 2px solid #000000; text-decoration: none; 
+            position: absolute; /* positions relative to top and bottom viewport */ top: 10px; left: -999px; /* to push button off screen */
+        }
+        .skip:focus { /* when the button is tabbed to */
+            left: 10px; 
+        }
+    </style>
+</head>
+<body>
+    I did not know how people with disabilities surfed the web. I found it interesting with how fast the platform was speaking. It took me a little bit to hone in and understand what it was saying. 
+    One thing that I noticed was hard for him was knowing where he is on the screen. 
+    He relies heavily on serching within the page with command f. 
+    Something that he said was hard for him is when developers do not make adjustments for people with disabilities.
+    He said that sometimes there are pages with over a hundred links but he has no way of fast searching for them so he is forced to look through each one individually. 
+    <nav>
+        <!--dont forget bookmark link and skip to content-->
+        <a href="#skip" class="skip">Skip to Content</a><br>
+        <!--tabindex is for complex websites to change tab order-->
+        <a href="http://www.amazon.com" tabindex="4">Amazon</a><br>
+        <a href="http://www.google.com" tabindex="3">google</a><br>
+        <a href="http://www.ebay.com" tabindex="2">ebay</a><br>
+    </nav>
+    <h1>All the A11y techniques</h1>
+    <p id="skip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, error, est quibusdam officiis nulla amet omnis quaerat voluptate, laboriosam libero pariatur saepe itaque ea. Eius dicta similique exercitationem porro temporibus?
+    </p>
+</body>
+</html> 

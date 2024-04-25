@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .part1 {display: flex; margin: 30px;}
+            .part2 {display: flex; margin: 30px;}
+            .part1 {padding: 20px; background-color: rgb(205, 27, 27); border-radius: 1em;}
+            .part2 {padding: 20px; background-color: rgb(205, 27, 27); border-radius: 1em;}
+            .part2 div {flex: 1; padding: 10px;}
+            .part2 { flex-wrap: wrap;}
+            .map {max-width: 100%;}
+            .form {width: 100%}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="https://tjkozera-su.github.io/ist263/lab06/biocopy.html">Bio</a>
+            <span>|</span>
+            <a href="https://tjkozera-su.github.io/ist263/lab07/contactlab7.html">Contact</a>
+            <span>|</span>
+            <a href="https://tjkozera-su.github.io/ist263/lab07/skillslab7.html">Skills</a>
+            <span>|</span>
+        </nav>
+         <h1>Contact</h1>             
+                
+        <div class="part1">
+            <div>
+                <h2>Name</h2>
+                <h2>Thadeus Kozera</h2>
+                <h2>Address</h2>
+                <h2>900 S Crouse Ave, Syracuse, NY 13244</h2>
+            </div>
+            <div>
+                <a href="mailto:tjkozera@syr.edu">Thadeus Kozera Email</a>
+                <br>
+                <a href="https://www.linkedin.com/in/thadeus-kozera/">My LinkedIn Page</a>
+                    <img src="../images/logo-sized.png" alt="LinkedIn Logo">
+            </div>
+        </div>
+
+        <div class="part2">
+            <div class="form">
+                <form action="https://formspree.io/f/xoqgebol" method="post">
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br> 
+                    <label for="instructions">Were you able to find my address?:</label><br>
+                    <textarea id="instructions" name="instructions" rows="3" cols="60"></textarea><br>
+                    <p>Did you follow me on LinkedIn?:</p>
+                    <input type="radio" id="yes" name="yesno" value="yes"> 
+                    <label for="yes">yes</label>
+                    <input type="radio" id="no" name="yesno" value="no">
+                    <label for="no">no</label>
+                    <input type="Submit" value="Send Form">
+                </form>
+            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.055749770978!2d-76.13695229999999!3d43.040258500000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39f4537cd79%3A0x968a90aa98400698!2s900%20S%20Crouse%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1706806102424!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        </div>
+    </body>
+</html>
